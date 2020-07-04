@@ -27,7 +27,6 @@ namespace Zxw.Framework.NetCore.Extensions
             //return expression.Member.Name; //该属性只返回最后一个属性，因此采用下面方法返回。
             return expression.ToString().Substring(2);
         }
-
         public static ParameterExpression CreateLambdaParam<T>(string name)
         {
             return Expression.Parameter(typeof(T), name);
